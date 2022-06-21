@@ -29,6 +29,7 @@ class Article(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String(60))
+    bazl_number = Column(Integer)
     description = Column(String(100))
     content = Column(String(2000))
     date = Column(date)
