@@ -20,7 +20,7 @@ class Token(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     token = Column(String(100))
-    user_id = Column(ForeignKey("users.id"))
+    user_id = Column(Integer, ForeignKey("users.id"))
 
     user = relationship("User", back_populates="tokens")
 
