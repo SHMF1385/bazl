@@ -15,6 +15,10 @@ class Login(User):
 class ShowUser(User):
     nickname: str
 
+class Signup(User):
+    nickname: str
+    password: str
+
 class ArticleBase(BaseModel):
     title: str
     bazl_number: int
